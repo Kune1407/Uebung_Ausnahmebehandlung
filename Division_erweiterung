@@ -1,0 +1,9 @@
+try:
+    erste_Zahl = int(input("Geben sie die zu dividierende Zahl an: "))
+    zweite_Zahl = int(input("Geben sie die Zahl an durch die die erste Zahl dividiert werden soll: "))
+    Ergebnis = erste_Zahl/zweite_Zahl
+    print(Ergebnis)
+except ZeroDivisionError:
+    print("Division durch 0 nicht erlaubt.")
+except ValueError:
+    print("Bitte geben sie eine gültige Zahl ein.")
