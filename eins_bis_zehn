@@ -1,0 +1,14 @@
+Liste = []
+while True:
+    try:
+        eingabe = int(input("Gib eine Zahl zwischen 1 und 10 ein: "))
+        if 1 <= eingabe <= 10:
+            Liste.append(eingabe)
+            print("Die Zahl wurde zur Liste hinzugefügt.")
+            break
+        else:
+            print("Ungültige Zahl! Bitte eine Zahl zwischen 1 und 10 eingeben.")
+    except ValueError:
+        print("Ungültige Eingabe! Bitte eine ganze Zahl eingeben.")
+print("Programm beendet.")
+print("Inhalt der Liste:", Liste)
