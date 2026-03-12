@@ -1,0 +1,8 @@
+Werte = [1,2,3]
+try:
+    index = int(input("Welchen Index möchtest du ausgeben? "))
+    Ergebnis = Werte[index]
+except IndexError as err:
+    print(err)
+else:
+    print("Deine Antwort ist", Ergebnis)
