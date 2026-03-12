@@ -1,0 +1,8 @@
+while True:
+    try:
+        Quadratzahl = int(input("Geben sie die zu quadrierende Zahl ein: "))
+        Ergebnis = Quadratzahl * Quadratzahl
+        print(Ergebnis)
+        break
+    except ValueError:
+        print("Geben sie bitte eine gültige Zahl ein.")
